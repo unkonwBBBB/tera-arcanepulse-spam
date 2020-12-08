@@ -36,7 +36,7 @@ module.exports = function salchy(script) {
 		focusboss = !focusboss;
 		script.command.message(`Salchy's focus boss mode is now ${(focusboss) ? 'en' : 'dis'}abled.`);
 	})	
-	script.hook('S_LOGIN', 14, (packet) => {
+	script.hook('S_LOGIN', 15, (packet) => {
 	cid = packet.gameId;
 		model = packet.templateId;
 		job = (model - 10101) % 100;
